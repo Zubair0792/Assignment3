@@ -141,17 +141,7 @@ p{
     text-shadow: none;
     animation: right_to_left 1s ease;    
 }
-.b1{
-    padding: 10px;
-    margin-left: 20px;
-}
-.b2{
-    display: inline-block;
-    margin-left:8%;
-}
-.b3{
-    margin-left:25%;
-}
+
 
 .p2{
     color: white;
@@ -401,4 +391,45 @@ p{
     margin-left: 80px;
     padding: 15px;
     font-size: 13px;
+}
+
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    border: 0px solid white;
+    list-style-type: none;
+    border-radius: 30px;
+}
+ul li a{
+    display: block;
+    padding: 8px 16px 10px;
+    color:black;
+    text-decoration: none;
+}
+ul li a:hover{
+    background-color:#316DC3;
+    display: inline-block;
+    border-radius: 30px;
+    height: 40px;
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+ul li ul.dropdown{
+    min-width: 200%;
+    background-color: white;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
+ul li:hover ul.dropdown{
+    display: block;
+    background-color: white;
+}
+ul li ul.dropdown li{
+    display: block;
 }
